@@ -1,14 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html style="background-image: url(assets/images/wood.png);">
 <head>
 	<meta charset="utf-8">
 	<title>Contact Page</title>
 
 	<!-- Bootstrap CDN -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
-	<header></header>
-	<footer></footer>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="row">
+				<!-- <div class="col-sm-1"></div> -->
+				<div class="col-sm-3 col-sm-offset-1">
+					<div class="navbar-header bg-primary"><h1 style="padding-left: 20px; padding-right: 20px;">Steven Quast</h1></div>
+				</div>
+				<!-- <div class="col-sm-6"></div> -->
+				<div class="col-sm-3 col-sm-offset-5">
+					<ul class="nav navbar-nav" style="padding-top: 10px;">
+						<li><a href="index.html">About Me</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact Me</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Section -->
+	<section class="container-fluid col-sm-6">
+		<div class="jumbotron">
+
+			<h2 class="col-sm-12" style="color: #4aaaa5;" >Contact Me</h2>
+			<form action="mailto:smquast@gmail.com" method="post" enctype="text/plain">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" class="form-control" id="name" placeholder="John Smith">
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+				</div>
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="10" class="form-control"></textarea>
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- External Links -->
+	<section class="container-fluid col-sm-3 col-sm-offset-3">
+		<div class="jumbotron">
+			
+			<h2 class="row" style="color: #4aaaa5;">Connect with me</h2>
+			<div class="row">
+				<a href="https://github.com/stevenqu248"><img src="assets/images/Github.png" alt="Github"></a>
+				<a href="https://www.linkedin.com/in/steven-quast-71410aa7/"><img src="assets/images/linkedin.png" alt="Linkedin"></a>
+				<a href="http://stackoverflow.com/users/7584199/galgano"><img src="assets/images/stackoverflow.png" alt="Stackoverflow"></a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="panel panel-default pull-left text-center" style="width: 100%; padding-top: 20px; padding-bottom: 20px; margin-bottom: 0px; border-radius: 0px;">&copy; Copyright 2017 Steven Quast</footer>
 </body>
 </html>
